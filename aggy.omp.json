@@ -6,9 +6,28 @@
             "alignment": "left",
             "segments": [
                 {
+                    "type": "exit",
+                    "style": "diamond",
+                    "foreground": "#292d3e",
+                    "background": "#f07178",
+                    "leading_diamond": "\ue0b2",
+                    "trailing_diamond": "\ue0b0",
+                    "properties": {
+                        "template": "x {{ .Text }}"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "segments": [
+                {
                     "type": "path",
-                    "style": "plain",
-                    "foreground": "#ffffff",
+                    "style": "diamond",
+                    "foreground": "#d0d0d0",
+                    "background": "#292d3e",
+                    "leading_diamond": "\ue0b2",
                     "properties": {
                         "prefix": "",
                         "style": "full"
@@ -17,27 +36,38 @@
                 {
                     "type": "git",
                     "style": "plain",
-                    "foreground": "#C2C206",
+                    "foreground": "#ffcb6b",
+                    "background": "#292d3e",
                     "properties": {
-                        "prefix": "",
-                        "postfix": "",
                         "fetch_status": true,
                         "fetch_upstream_icon": true,
-                        "template": "{{ .HEAD }}{{ if .Staging.Changed }}<#00AA00> ● {{ .Staging.String }}</>{{ end }}{{ if .Working.Changed }}<#D75F00> ● {{ .Working.String }}</>{{ end }}"
+                        "template": "{{ .HEAD }}{{ if .Staging.Changed }}<#c3e88d> ● {{ .Staging.String }}</>{{ end }}{{ if .Working.Changed }}<#f07178> ● {{ .Working.String }}</>{{ end }}"
                     }
                 },
                 {
-                    "type": "root",
-                    "style": "plain",
-                    "foreground": "#B5B50D"
-                },
-                {
-                    "type": "exit",
-                    "style": "plain",
-                    "foreground": "#C94A16",
+                    "type": "text",
+                    "style": "diamond",
+                    "background": "#292d3e",
+                    "trailing_diamond": "\ue0b0",
                     "properties": {
-                        "template": "x{{ .Text }}",
-                        "prefix": ""
+                        "text": "\u200b"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "prompt",
+            "alignment": "right",
+            "segments": [
+                {
+                    "type": "time",
+                    "style": "diamond",
+                    "foreground": "#d0d0d0",
+                    "background": "#292d3e",
+                    "leading_diamond": "\ue0b2",
+                    "trailing_diamond": "\ue0b0",
+                    "properties": {
+                        "time_format": "2006-01-02 15:04:05"
                     }
                 }
             ]
@@ -48,11 +78,18 @@
             "newline": true,
             "segments": [
                 {
+                    "type": "root",
+                    "style": "diamond",
+                    "foreground": "#292d3e",
+                    "background": "#ffcb6b",
+                    "leading_diamond": "\ue0b6",
+                    "trailing_diamond": "\ue0b4"
+                },
+                {
                     "type": "text",
                     "style": "plain",
-                    "foreground": "#007ACC",
+                    "foreground": "#d0d0d0",
                     "properties": {
-                        "prefix": "",
                         "text": "\u276F"
                     }
                 }
