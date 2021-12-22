@@ -6,11 +6,19 @@
             "alignment": "left",
             "segments": [
                 {
-                    "type": "path",
+                    "type": "text",
                     "style": "diamond",
-                    "foreground": "#d0d0d0",
                     "background": "#292d3e",
                     "leading_diamond": "\ue0b2",
+                    "properties": {
+                        "text": "\u200b"
+                    }
+                },
+                {
+                    "type": "path",
+                    "style": "plain",
+                    "foreground": "#d0d0d0",
+                    "background": "#292d3e",
                     "properties": {
                         "prefix": "",
                         "style": "full"
