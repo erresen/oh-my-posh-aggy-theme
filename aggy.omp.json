@@ -6,23 +6,6 @@
             "alignment": "left",
             "segments": [
                 {
-                    "type": "exit",
-                    "style": "diamond",
-                    "foreground": "#292d3e",
-                    "background": "#f07178",
-                    "leading_diamond": "\ue0b2",
-                    "trailing_diamond": "\ue0b0",
-                    "properties": {
-                        "template": "x {{ .Text }}"
-                    }
-                }
-            ]
-        },
-        {
-            "type": "prompt",
-            "alignment": "left",
-            "segments": [
-                {
                     "type": "path",
                     "style": "diamond",
                     "foreground": "#d0d0d0",
