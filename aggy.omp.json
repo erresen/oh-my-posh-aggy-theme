@@ -6,42 +6,25 @@
             "alignment": "left",
             "segments": [
                 {
-                    "type": "text",
-                    "style": "diamond",
-                    "background": "#292d3e",
-                    "leading_diamond": "\ue0b2",
-                    "properties": {
-                        "text": "\u200b"
-                    }
-                },
-                {
                     "type": "path",
-                    "style": "plain",
+                    "style": "diamond",
+                    "trailing_diamond": "\uE0B0",
                     "foreground": "#d0d0d0",
                     "background": "#292d3e",
                     "properties": {
-                        "prefix": "",
                         "style": "full"
                     }
                 },
                 {
                     "type": "git",
-                    "style": "plain",
+                    "style": "powerline",
+                    "powerline_symbol": "\uE0B0",
                     "foreground": "#ffcb6b",
                     "background": "#292d3e",
                     "properties": {
                         "fetch_status": true,
                         "fetch_upstream_icon": true,
                         "template": "{{ .HEAD }}{{ if .Staging.Changed }}<#c3e88d> ● {{ .Staging.String }}</>{{ end }}{{ if .Working.Changed }}<#f07178> ● {{ .Working.String }}</>{{ end }}"
-                    }
-                },
-                {
-                    "type": "text",
-                    "style": "diamond",
-                    "background": "#292d3e",
-                    "trailing_diamond": "\ue0b0",
-                    "properties": {
-                        "text": "\u200b"
                     }
                 }
             ]
@@ -56,7 +39,6 @@
                     "foreground": "#d0d0d0",
                     "background": "#292d3e",
                     "leading_diamond": "\ue0b2",
-                    "trailing_diamond": "\ue0b0",
                     "properties": {
                         "time_format": "2006-01-02 15:04:05"
                     }
@@ -69,20 +51,23 @@
             "newline": true,
             "segments": [
                 {
-                    "type": "root",
+                    "type": "shell",
                     "style": "diamond",
-                    "foreground": "#292d3e",
-                    "background": "#ffcb6b",
-                    "leading_diamond": "\ue0b6",
-                    "trailing_diamond": "\ue0b4"
+                    "foreground": "#d0d0d0",
+                    "background": "#292d3e",
+                    "trailing_diamond": "\ue0b0",
+                    "properties": {
+                        "mapped_shell_names": {
+                            "powershell": "pwsh"
+                        }
+                    }
                 },
                 {
-                    "type": "text",
-                    "style": "plain",
-                    "foreground": "#d0d0d0",
-                    "properties": {
-                        "text": "\u276F"
-                    }
+                    "type": "root",
+                    "style": "powerline",
+                    "powerline_symbol": "\uE0B0",
+                    "foreground": "#292d3e",
+                    "background": "#ffcb6b"
                 }
             ]
         }
