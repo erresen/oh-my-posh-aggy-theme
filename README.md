@@ -6,6 +6,7 @@ Aggy is a theme for [oh-my-posh][omp]
 - Full path
 - Git changes
 - ISO format time
+- Shell
 - Warning for root
 
 Regular prompt with some git changes:
