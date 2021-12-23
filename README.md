@@ -12,4 +12,4 @@ Regular prompt with some git changes:
 ![Normal prompt](normal-prompt.png)
 
 Root user prompt with some git changes:
-![Root prompt](root-user.png)
+![Root prompt](root-prompt.png)
